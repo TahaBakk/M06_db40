@@ -1,10 +1,17 @@
+import com.db4o.ObjectContainer;
+import com.db4o.query.Query;
+import com.sun.org.apache.xpath.internal.operations.And;
+import com.sun.org.apache.xpath.internal.operations.Equals;
+
+import java.lang.reflect.Field;
+
 /**
  * Created by x3727349s on 09/02/17.
  */
 public class Person {
 
-    public Person()
-    { }
+    public Person(){ }
+
     public Person(String firstName, String lastName, int age)
     {
         this.firstName = firstName;
@@ -48,10 +55,5 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-
-
-
-
-
 
 }
